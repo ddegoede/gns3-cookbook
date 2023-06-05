@@ -1,0 +1,15 @@
+[Server]
+host = 0.0.0.0
+port = <%= @port %>
+images_path = <%= @app_dir %>/images
+projects_path = <%= @app_dir %>/projects
+appliances_path = <%= @app_dir %>/appliances
+configs_path = <%= @app_dir %>/configs
+ubridge_path = <%= @app_dir %>/ubridge/ubridge
+report_errors = False
+console_start_port_range = <%= @console_port_start %>
+console_end_port_range = <%= @console_port_end %>
+
+[Qemu]
+enable_hardware_acceleration = True
+require_hardware_acceleration = True
